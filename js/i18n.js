@@ -140,6 +140,30 @@
       en: "../privacy%20policy/easy_balanced_eating/privacy-policy-en.html",
       es: "../privacy%20policy/easy_balanced_eating/privacy-policy-es.html",
     },
+    "privacy.twins": {
+      en: "privacy%20policy/twins/privacy-policy-en.html",
+      es: "privacy%20policy/twins/privacy-policy-es.html",
+    },
+    "privacy.dog": {
+      en: "privacy%20policy/guess_the_dog_name/privacy-policy-en.html",
+      es: "privacy%20policy/guess_the_dog_name/privacy-policy-es.html",
+    },
+    "privacy.cat": {
+      en: "privacy%20policy/guess_the_cat_name/privacy-policy-en.html",
+      es: "privacy%20policy/guess_the_cat_name/privacy-policy-es.html",
+    },
+    "privacy.destroy": {
+      en: "../privacy%20policy/destroy_walls/privacy-policy-en.html",
+      es: "../privacy%20policy/destroy_walls/privacy-policy-es.html",
+    },
+    "privacy.double": {
+      en: "../privacy%20policy/double_mission/privacy-policy-en.html",
+      es: "../privacy%20policy/double_mission/privacy-policy-es.html",
+    },
+    "privacy.dodge": {
+      en: "../privacy%20policy/dodge_and_grab/privacy-policy-en.html",
+      es: "../privacy%20policy/dodge_and_grab/privacy-policy-es.html",
+    },
   };
 
   function getLang() {

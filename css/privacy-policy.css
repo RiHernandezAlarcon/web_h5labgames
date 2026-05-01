@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+
+:root {
+  --pp-bg: #0a0e17;
+  --pp-surface: rgba(255, 255, 255, 0.045);
+  --pp-surface-hover: rgba(255, 255, 255, 0.08);
+  --pp-text: #f1f5f9;
+  --pp-muted: #94a3b8;
+  --pp-accent: #6366f1;
+  --pp-accent-soft: rgba(99, 102, 241, 0.35);
+  --pp-border: rgba(255, 255, 255, 0.09);
+  --pp-font: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --pp-max: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--pp-font);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--pp-text);
+  color-scheme: dark;
+  background-color: var(--pp-bg);
+  background-image:
+    radial-gradient(ellipse 100% 70% at 50% -25%, rgba(99, 102, 241, 0.22), transparent 55%),
+    radial-gradient(ellipse 60% 45% at 100% 15%, rgba(34, 211, 238, 0.05), transparent 50%);
+}
+
+/* ——— Site chrome (matches main H5lab header feel) ——— */
+.privacy-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* containing block for .privacy-lang */
+  isolation: isolate;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  padding: 0.55rem 1rem;
+  padding-right: max(1rem, 5.5rem);
+  padding-left: max(1rem, 5.5rem);
+  background: rgba(10, 14, 23, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--pp-border);
+}
+
+.privacy-site-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.privacy-site-header__logo img {
+  width: min(120px, 36vw);
+  height: auto;
+  display: block;
+}
+
+.privacy-site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.privacy-site-header__nav a {
+  padding: 0.4rem 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--pp-text);
+  border-radius: 999px;
+  background: var(--pp-surface);
+  border: 1px solid var(--pp-border);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.privacy-site-header__nav a:hover {
+  background: var(--pp-surface-hover);
+  border-color: rgba(99, 102, 241, 0.45);
+  color: #fff;
+}
+
+.privacy-lang {
+  position: absolute;
+  top: max(0.45rem, env(safe-area-inset-top, 0px));
+  right: max(0.55rem, env(safe-area-inset-right, 0px));
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--pp-border);
+  background: var(--pp-surface);
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.privacy-lang__btn {
+  margin: 0;
+  padding: 0.32rem 0.72rem;
+  font-family: var(--pp-font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--pp-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.privacy-lang__btn:hover {
+  color: var(--pp-text);
+  background: var(--pp-surface-hover);
+}
+
+.privacy-lang__btn--active {
+  color: #fff;
+  background: var(--pp-accent-soft);
+  pointer-events: none;
+  cursor: default;
+}
+
+/* ——— Document ——— */
+.privacy-doc {
+  max-width: var(--pp-max);
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem 3.5rem;
+}
+
+.privacy-doc h1 {
+  font-size: clamp(1.35rem, 4vw, 1.65rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.privacy-doc .meta {
+  color: var(--pp-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+.privacy-doc h2 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 2rem 0 0.65rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--pp-border);
+}
+
+.privacy-doc p {
+  margin: 0.65rem 0;
+}
+
+.privacy-doc ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.privacy-doc li {
+  margin: 0.35rem 0;
+}
+
+.privacy-doc a {
+  color: #a5b4fc;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.privacy-doc a:hover {
+  color: #c7d2fe;
+}
+
+.privacy-doc code {
+  font-size: 0.88em;
+  padding: 0.12em 0.4em;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--pp-border);
+}
