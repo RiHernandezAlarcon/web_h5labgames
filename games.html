@@ -14,37 +14,43 @@
     <meta name="keywords" content="H5lab, Android games, indie games, casual games, Google Play">
     <title>H5lab — Games</title>
 </head>
-<body>
+<body data-i18n-page="games">
     <header>
         <div class="contenedor_img_header">
-            <a href="index.html" aria-label="H5lab home">
+            <a href="index.html" data-i18n-attr="aria-label|common.logo_aria" aria-label="H5lab home">
                 <img src="img/H5lab2.png" alt="Logo H5lab" class="img_header">
             </a>
         </div>
-        <nav class="nav_header" aria-label="Main">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="games.html" aria-current="page">Games</a></li>
-                <li><a href="html/apps.html">Apps</a></li>
-            </ul>
-        </nav>
+        <div class="header-toolbar">
+            <nav class="nav_header" data-i18n-attr="aria-label|common.nav_main" aria-label="Main">
+                <ul>
+                    <li><a href="index.html"><span data-i18n="nav.about">About</span></a></li>
+                    <li><a href="games.html" aria-current="page"><span data-i18n="nav.games">Games</span></a></li>
+                    <li><a href="html/apps.html"><span data-i18n="nav.apps">Apps</span></a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" role="group" data-i18n-attr="aria-label|common.lang_aria" aria-label="Language">
+                <button type="button" class="lang-switcher__btn" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-switcher__btn" data-set-lang="es" aria-pressed="false">ES</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1 class="titulo">Games</h1>
-        <p class="page-lead">Casual Android titles from an indie studio — trailers, screenshots, and links to Google Play.</p>
+        <h1 class="titulo" data-i18n="games.h1">Games</h1>
+        <p class="page-lead" data-i18n="games.lead">Casual Android titles from an indie studio — trailers, screenshots, and links to Google Play.</p>
 
         <article class="game-card" data-aos="fade-up">
             <div class="game-card__intro">
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/DsGffX7F-5d748ujNZ5_ds17ZxpnnAvG_SuNfqpZIdUl_kQbY2q3sdWR-NvmJ3Qgi4I=s256-rw" alt="Twins - Balls app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Twins - Balls</h2>
-                    <p class="game-card__desc">Your objective is to navigate each ball to its destination through a series of obstacle-filled levels.</p>
+                    <p class="game-card__desc" data-i18n="games.twins_desc">Your objective is to navigate each ball to its destination through a series of obstacle-filled levels.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.com.unity.twins">Google Play</a>
-                <a class="btn btn-secondary" href="TwinsbyH5labgamesPrivacypolicy.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.com.unity.twins"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="TwinsbyH5labgamesPrivacypolicy.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/B6Sw3KgUt-M" title="Twins - Balls trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -60,12 +66,12 @@
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/lB3cVurL81IE4C7ZBPsFpDzEL4FS4IFFCTxS62DQF6aLAugYUAVdCZpG99ubopjy3ns1=s256-rw" alt="Guess The Dog Name app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Guess The Dog Name</h2>
-                    <p class="game-card__desc">Discover the names of adorable dogs! In each level, you will be presented with a beautiful image of a dog and you have to guess its name.</p>
+                    <p class="game-card__desc" data-i18n="games.dog_desc">Discover the names of adorable dogs! In each level, you will be presented with a beautiful image of a dog and you have to guess its name.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.guessthedogname">Google Play</a>
-                <a class="btn btn-secondary" href="GuessTheDogNamebyH5labgamesPrivacypolicy.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.guessthedogname"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="GuessTheDogNamebyH5labgamesPrivacypolicy.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/Jnru0clBCbU" title="Guess The Dog Name trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -82,12 +88,12 @@
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/sGxVKOKxKqkHnr12VbYwF86BKpghi2Zjx_B5AXJYpLzFzqE-_jwxd44yB6NO5gKD4w=s256-rw" alt="Guess The Cat Name app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Guess The Cat Name</h2>
-                    <p class="game-card__desc">In each level, captivating images of cats will be presented, and your challenge will be to guess their names.</p>
+                    <p class="game-card__desc" data-i18n="games.cat_desc">In each level, captivating images of cats will be presented, and your challenge will be to guess their names.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.guessthecatname">Google Play</a>
-                <a class="btn btn-secondary" href="GuessTheCatNamebyH5labgamesPrivacypolicy.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.h5lab.guessthecatname"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="GuessTheCatNamebyH5labgamesPrivacypolicy.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/LvWpPu90BtE" title="Guess The Cat Name trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -102,10 +108,11 @@
 
     <footer>
         <div id="contenedor_imgs_footer">
-            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" aria-label="H5lab on Google Play"><img class="img_footer" src="img/googleplay.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" data-i18n-attr="aria-label|common.footer_play" aria-label="H5lab on Google Play"><img class="img_footer" src="img/googleplay.png" alt=""></a>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 650, once: true, offset: 40 });

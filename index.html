@@ -12,54 +12,60 @@
     <meta name="keywords" content="H5lab, indie developer, Android games, indie games, H5lab games">
     <title>H5lab — About</title>
 </head>
-<body>
+<body data-i18n-page="about">
     <header>
         <div class="contenedor_img_header">
-            <a href="index.html" aria-label="H5lab home">
+            <a href="index.html" data-i18n-attr="aria-label|common.logo_aria" aria-label="H5lab home">
                 <img src="img/H5lab2.png" alt="Logo H5lab" class="img_header">
             </a>
         </div>
-        <nav class="nav_header" aria-label="Main">
-            <ul>
-                <li><a href="index.html" aria-current="page">About</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="html/apps.html">Apps</a></li>
-            </ul>
-        </nav>
+        <div class="header-toolbar">
+            <nav class="nav_header" data-i18n-attr="aria-label|common.nav_main" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page"><span data-i18n="nav.about">About</span></a></li>
+                    <li><a href="games.html"><span data-i18n="nav.games">Games</span></a></li>
+                    <li><a href="html/apps.html"><span data-i18n="nav.apps">Apps</span></a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" role="group" data-i18n-attr="aria-label|common.lang_aria" aria-label="Language">
+                <button type="button" class="lang-switcher__btn" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-switcher__btn" data-set-lang="es" aria-pressed="false">ES</button>
+            </div>
+        </div>
     </header>
 
     <main>
         <div id="grid_nosotros">
-            <h1 id="titulo_nosotros" class="titulo">Behind H5lab</h1>
-            <p class="page-lead page-lead--tight">One independent developer — casual games and purposeful Android apps, built with care.</p>
+            <h1 id="titulo_nosotros" class="titulo" data-i18n="about.h1">Behind H5lab</h1>
+            <p class="page-lead page-lead--tight" data-i18n="about.lead">One independent developer — casual games and purposeful Android apps, built with care.</p>
 
             <section class="about-panel" id="parrafo_nosotros_uno" aria-labelledby="about-story-heading">
-                <h2 class="about-heading" id="about-story-heading">Independent &amp; player-focused</h2>
-                <p>H5lab is a solo studio: I make games and utilities I would want to use myself — approachable design, fair challenge, and respect for your time. I’m always looking for ideas that feel a little different, whether that’s a tricky puzzle or a calm tool for everyday habits.</p>
-                <p>Every install, rating, and message matters. Your support keeps releases improving and motivates each update. Thank you for playing and for trying what I ship.</p>
+                <h2 class="about-heading" id="about-story-heading" data-i18n="about.story_h2">Independent &amp; player-focused</h2>
+                <p data-i18n="about.story_p1">H5lab is a solo studio: I make games and utilities I would want to use myself — approachable design, fair challenge, and respect for your time. I’m always looking for ideas that feel a little different, whether that’s a tricky puzzle or a calm tool for everyday habits.</p>
+                <p data-i18n="about.story_p2">Every install, rating, and message matters. Your support keeps releases improving and motivates each update. Thank you for playing and for trying what I ship.</p>
             </section>
 
             <section class="about-panel" aria-labelledby="about-ship-heading">
-                <h2 class="about-heading" id="about-ship-heading">What I ship</h2>
+                <h2 class="about-heading" id="about-ship-heading" data-i18n="about.ship_h2">What I ship</h2>
                 <div class="about-split">
                     <div class="about-split__item">
-                        <h3>Games</h3>
-                        <p>Casual Android titles with trailers, screenshots, and links to Google Play — puzzles, guessing games, and more.</p>
-                        <a class="btn btn-primary" href="games.html">View games</a>
+                        <h3 data-i18n="about.games_h3">Games</h3>
+                        <p data-i18n="about.games_p">Casual Android titles with trailers, screenshots, and links to Google Play — puzzles, guessing games, and more.</p>
+                        <a class="btn btn-primary" href="games.html" data-i18n="about.games_cta">View games</a>
                     </div>
                     <div class="about-split__item">
-                        <h3>Apps</h3>
-                        <p>Tools beyond gaming: <strong>Easy Balanced Eating</strong> (coming soon on Google Play) for simple, visual meal logging and weekly habits.</p>
-                        <a class="btn btn-secondary" href="html/apps.html">View apps</a>
+                        <h3 data-i18n="about.apps_h3">Apps</h3>
+                        <p data-i18n-html="about.apps_p">Tools beyond gaming: <strong>Easy Balanced Eating</strong> (coming soon on Google Play) for simple, visual meal logging and weekly habits.</p>
+                        <a class="btn btn-secondary" href="html/apps.html" data-i18n="about.apps_cta">View apps</a>
                     </div>
                 </div>
             </section>
 
             <section class="about-panel" aria-labelledby="about-connect-heading">
-                <h2 class="about-heading" id="about-connect-heading">Where to find H5lab</h2>
-                <p class="about-note">Open the developer page on Google Play for all listings. For general enquiries you can email <a href="mailto:h5labgames@gmail.com">h5labgames@gmail.com</a>. For app-specific issues, the contact options on each Play Store listing are often the fastest route.</p>
+                <h2 class="about-heading" id="about-connect-heading" data-i18n="about.connect_h2">Where to find H5lab</h2>
+                <p class="about-note" data-i18n-html="about.connect_p">Open the developer page on Google Play for all listings. For general enquiries you can email <a href="mailto:h5labgames@gmail.com">h5labgames@gmail.com</a>. For app-specific issues, the contact options on each Play Store listing are often the fastest route.</p>
                 <div class="about-cta-row">
-                    <a class="btn btn-primary" href="https://play.google.com/store/apps/dev?id=6271149012795407944">Google Play developer</a>
+                    <a class="btn btn-primary" href="https://play.google.com/store/apps/dev?id=6271149012795407944" data-i18n="about.play_dev">Google Play developer</a>
                 </div>
             </section>
         </div>
@@ -67,10 +73,11 @@
 
     <footer>
         <div id="contenedor_imgs_footer">
-            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" aria-label="H5lab on Google Play"><img class="img_footer" src="img/googleplay.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" data-i18n-attr="aria-label|common.footer_play" aria-label="H5lab on Google Play"><img class="img_footer" src="img/googleplay.png" alt=""></a>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

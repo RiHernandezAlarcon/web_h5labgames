@@ -13,25 +13,31 @@
     <meta name="keywords" content="H5lab apps, Easy Balanced Eating, Android, H5lab">
     <title>H5lab — Apps</title>
 </head>
-<body>
+<body data-i18n-page="apps">
     <header>
         <div class="contenedor_img_header">
-            <a href="../index.html" aria-label="H5lab home">
+            <a href="../index.html" data-i18n-attr="aria-label|common.logo_aria" aria-label="H5lab home">
                 <img src="../img/H5lab2.png" alt="Logo H5lab" class="img_header">
             </a>
         </div>
-        <nav class="nav_header" aria-label="Main">
-            <ul>
-                <li><a href="../index.html">About</a></li>
-                <li><a href="../games.html">Games</a></li>
-                <li><a href="apps.html" aria-current="page">Apps</a></li>
-            </ul>
-        </nav>
+        <div class="header-toolbar">
+            <nav class="nav_header" data-i18n-attr="aria-label|common.nav_main" aria-label="Main">
+                <ul>
+                    <li><a href="../index.html"><span data-i18n="nav.about">About</span></a></li>
+                    <li><a href="../games.html"><span data-i18n="nav.games">Games</span></a></li>
+                    <li><a href="apps.html" aria-current="page"><span data-i18n="nav.apps">Apps</span></a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" role="group" data-i18n-attr="aria-label|common.lang_aria" aria-label="Language">
+                <button type="button" class="lang-switcher__btn" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-switcher__btn" data-set-lang="es" aria-pressed="false">ES</button>
+            </div>
+        </div>
     </header>
 
     <main class="page-apps">
-        <h1 class="titulo">Apps</h1>
-        <p class="page-lead">Android apps from H5lab — store listings, screenshots, and privacy documentation for each release.</p>
+        <h1 class="titulo" data-i18n="apps.h1">Apps</h1>
+        <p class="page-lead" data-i18n="apps.lead">Android apps from H5lab — store listings, screenshots, and privacy documentation for each release.</p>
 
         <article class="game-card" data-aos="fade-up">
             <div class="game-card__intro">
@@ -39,14 +45,14 @@
                 <div class="game-card__text">
                     <div class="game-card__title-row">
                         <h2 class="game-card__title">Easy Balanced Eating</h2>
-                        <span class="app-badge" title="Not yet on Google Play">Próximamente</span>
+                        <span class="app-badge" data-i18n-attr="title|apps.play_btn_title" title="Not yet on Google Play" data-i18n="apps.badge">Coming soon</span>
                     </div>
-                    <p class="game-card__desc">Track what you eat across categories (vegetables, fruits, proteins, carbs, legumes, healthy fats and more). Set flexible goals, see the week at a glance, explore charts by category and variety, and read nutrition tips on the home screen. Customize categories, foods, colours and targets. Light and dark mode. Spanish and English. Not a substitute for professional medical or nutrition advice.</p>
+                    <p class="game-card__desc" data-i18n="apps.ebe_desc">Track what you eat across categories (vegetables, fruits, proteins, carbs, legumes, healthy fats and more). Set flexible goals, see the week at a glance, explore charts by category and variety, and read nutrition tips on the home screen. Customize categories, foods, colours and targets. Light and dark mode. Spanish and English. Not a substitute for professional medical or nutrition advice.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary disabled" href="https://play.google.com/store/apps/details?id=com.easybalancedeating.app" aria-disabled="true" title="Próximamente en Google Play">Google Play</a>
-                <a class="btn btn-secondary" href="../privacy%20policy/easy_balanced_eating/privacy-policy-en.html">Privacy policy</a>
+                <a class="btn btn-primary disabled" href="https://play.google.com/store/apps/details?id=com.easybalancedeating.app" aria-disabled="true" data-i18n-attr="title|apps.play_btn_title" title="Coming soon on Google Play"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" data-i18n-href="apps.privacy" href="../privacy%20policy/easy_balanced_eating/privacy-policy-en.html"><span data-i18n="apps.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__gallery">
                 <img src="../apps/easy_balanced_eating/screenshots/1777643977842.jpg" alt="Easy Balanced Eating screenshot 1" loading="lazy">
@@ -59,10 +65,11 @@
 
     <footer>
         <div id="contenedor_imgs_footer">
-            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" aria-label="H5lab on Google Play"><img class="img_footer" src="../img/googleplay.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" data-i18n-attr="aria-label|common.footer_play" aria-label="H5lab on Google Play"><img class="img_footer" src="../img/googleplay.png" alt=""></a>
         </div>
     </footer>
 
+    <script src="../js/i18n.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 650, once: true, offset: 40 });

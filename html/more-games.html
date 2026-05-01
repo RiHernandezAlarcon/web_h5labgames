@@ -14,37 +14,43 @@
     <meta name="keywords" content="H5lab, Android games, Destroy Walls, Double Mission, Dodge and Grab">
     <title>H5lab — More games</title>
 </head>
-<body>
+<body data-i18n-page="more">
     <header>
         <div class="contenedor_img_header">
-            <a href="../index.html" aria-label="H5lab home">
+            <a href="../index.html" data-i18n-attr="aria-label|common.logo_aria" aria-label="H5lab home">
                 <img src="../img/H5lab2.png" alt="Logo H5lab" class="img_header">
             </a>
         </div>
-        <nav class="nav_header" aria-label="Main">
-            <ul>
-                <li><a href="../index.html">About</a></li>
-                <li><a href="../games.html">Games</a></li>
-                <li><a href="apps.html">Apps</a></li>
-            </ul>
-        </nav>
+        <div class="header-toolbar">
+            <nav class="nav_header" data-i18n-attr="aria-label|common.nav_main" aria-label="Main">
+                <ul>
+                    <li><a href="../index.html"><span data-i18n="nav.about">About</span></a></li>
+                    <li><a href="../games.html"><span data-i18n="nav.games">Games</span></a></li>
+                    <li><a href="apps.html"><span data-i18n="nav.apps">Apps</span></a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher" role="group" data-i18n-attr="aria-label|common.lang_aria" aria-label="Language">
+                <button type="button" class="lang-switcher__btn" data-set-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-switcher__btn" data-set-lang="es" aria-pressed="false">ES</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1 class="titulo">More games</h1>
-        <p class="page-lead">Additional titles on Google Play — trailers and screenshots.</p>
+        <h1 class="titulo" data-i18n="more.h1">More games</h1>
+        <p class="page-lead" data-i18n="more.lead">Additional titles on Google Play — trailers and screenshots.</p>
 
         <article class="game-card" data-aos="fade-up">
             <div class="game-card__intro">
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/tDmwWq0SWSuPieMoDbP9M7GWoygMsIwUDG90JwnH707rMA-UtAtzYsKFP7FlwVc66WJS=s512-rw" alt="Destroy Walls app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Destroy Walls: Shooting Color</h2>
-                    <p class="game-card__desc">Switch colours and shoot as fast as you can — destroy enemies and bosses to save the day.</p>
+                    <p class="game-card__desc" data-i18n="more.destroy_desc">Switch colours and shoot as fast as you can — destroy enemies and bosses to save the day.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.H5lab.DestroyWalls">Google Play</a>
-                <a class="btn btn-secondary" href="../DestroyWallsShootingColorbyH5labgamesPrivacyp.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.H5lab.DestroyWalls"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="../DestroyWallsShootingColorbyH5labgamesPrivacyp.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/HgPQLEa3RTA" title="Destroy Walls: Shooting Color trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -61,12 +67,12 @@
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/bnkeXBh4vHN6IyLtTalldGqKNBLo3St7XfqUBMDYvm7N2zxIKP_rTkwxDnWLJd8XJQ=w480-h960-rw" alt="Double Mission app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Double Mission: Balls</h2>
-                    <p class="game-card__desc">Dual-ball platforming with simultaneous controls — collect stars and reach the goal.</p>
+                    <p class="game-card__desc" data-i18n="more.double_desc">Dual-ball platforming with simultaneous controls — collect stars and reach the goal.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=double.mission">Google Play</a>
-                <a class="btn btn-secondary" href="../DoubleMissionBallsbyH5labgamesPrivacypolicy.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=double.mission"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="../DoubleMissionBallsbyH5labgamesPrivacypolicy.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/vhp2gNp--kI" title="Double Mission - Balls trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -82,12 +88,12 @@
                 <img class="game-card__icon" src="https://play-lh.googleusercontent.com/8pIkqBpQRwAgF3cPXwcESmKSPFbn1zgMvu_-wMHQLzG1UdIp-5oTDL_ReoQJOVZqD5z0=w480-h960-rw" alt="Dodge and Grab app icon">
                 <div class="game-card__text">
                     <h2 class="game-card__title">Dodge and Grab</h2>
-                    <p class="game-card__desc">Dodge enemies and grab objectives — simple controls, skill-based levels.</p>
+                    <p class="game-card__desc" data-i18n="more.dodge_desc">Dodge enemies and grab objectives — simple controls, skill-based levels.</p>
                 </div>
             </div>
             <div class="game-card__actions">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dodge.and.grab">Google Play</a>
-                <a class="btn btn-secondary" href="../DodgeandGrabbyH5labgamesPrivacypolicy.html">Privacy policy</a>
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=dodge.and.grab"><span data-i18n="cta.google_play">Google Play</span></a>
+                <a class="btn btn-secondary" href="../DodgeandGrabbyH5labgamesPrivacypolicy.html"><span data-i18n="cta.privacy">Privacy policy</span></a>
             </div>
             <div class="game-card__video">
                 <iframe src="https://www.youtube-nocookie.com/embed/Qrew5WiVvTc" title="Dodge and Grab trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -101,10 +107,11 @@
 
     <footer>
         <div id="contenedor_imgs_footer">
-            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" aria-label="H5lab on Google Play"><img class="img_footer" src="../img/googleplay.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/dev?id=6271149012795407944" data-i18n-attr="aria-label|common.footer_play" aria-label="H5lab on Google Play"><img class="img_footer" src="../img/googleplay.png" alt=""></a>
         </div>
     </footer>
 
+    <script src="../js/i18n.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 650, once: true, offset: 40 });

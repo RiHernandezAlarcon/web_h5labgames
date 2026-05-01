@@ -113,7 +113,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.65rem 1rem 0.35rem;
+  /* gutters so the logo stays centered and clears the corner lang control */
+  padding: 0.65rem clamp(1rem, 5vw, 5.75rem) 0.35rem;
 }
 
 .img_header {
@@ -122,11 +123,61 @@ header {
   display: block;
 }
 
+.header-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  padding: 0 1rem 0.85rem;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  overflow: hidden;
+  position: absolute;
+  top: max(0.5rem, env(safe-area-inset-top, 0px));
+  right: max(0.65rem, env(safe-area-inset-right, 0px));
+  z-index: 2;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.lang-switcher__btn {
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switcher__btn:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+.lang-switcher__btn--active {
+  color: #fff;
+  background: var(--accent-soft);
+}
+
+.lang-switcher__btn--active:hover {
+  color: #fff;
+}
+
 .nav_header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem 0.85rem;
+  padding: 0;
   background: transparent;
   height: auto;
 }
