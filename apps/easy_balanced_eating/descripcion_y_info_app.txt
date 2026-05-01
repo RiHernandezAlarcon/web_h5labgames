@@ -1,0 +1,88 @@
+================================================================================
+  BALANCE MEALS — Descripción e información útil
+================================================================================
+
+DESCRIPCIÓN CORTA (ideal para tienda o redes)
+--------------------------------------------------------------------------------
+Registro visual de alimentación por categorías (verduras, frutas, proteínas,
+carbohidratos, legumbres, grasas saludables y más). Progreso semanal, estadísticas
+y consejos de nutrición para mantener hábitos más equilibrados.
+
+
+DESCRIPCIÓN EXTENDIDA
+--------------------------------------------------------------------------------
+Balance Meals es una aplicación para llevar un registro sencillo y visual de lo
+que comes, organizado por grupos alimentarios con metas orientativas por día o
+semana. Puedes marcar porciones, ver el avance de la semana de un vistazo
+(lunes a domingo), explorar gráficos por categoría y variedad, y leer consejos
+de nutrición que rotan al entrar al menú principal.
+
+La app permite personalizar categorías y alimentos, colores y objetivos por
+categoría. Incluye referencias de equivalencia de porciones y recomendaciones
+de variedad según los datos incluidos en la app.
+
+IMPORTANTE: Balance Meals no sustituye el criterio de un médico, nutricionista
+u otro profesional de la salud. Es una herramienta de conciencia y hábitos, no
+un plan médico ni un diagnóstico.
+
+
+FUNCIONALIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+• Registro por categorías nutricionales con metas sugeridas
+• Progreso semanal visual (esferas por día de la semana)
+• Estadísticas con gráficos (por categoría y variedad en la semana)
+• Consejos de nutrición en el menú principal
+• Personalización: categorías propias, alimentos, colores, objetivos
+• Modo claro y oscuro
+• Idioma: español e inglés (también puede seguir el idioma del sistema)
+• Pantalla de bienvenida e introducción; términos y privacidad integrados
+• Notificaciones locales (recordatorios; configurables según la app)
+• Publicidad: banners con Google AdMob en Android/iOS (cuando está habilitado)
+
+
+IDIOMAS
+--------------------------------------------------------------------------------
+Español (es) e inglés (en).
+
+
+DATOS Y PRIVACIDAD (resumen)
+--------------------------------------------------------------------------------
+El registro de comidas y preferencias se guarda en el dispositivo
+(SharedPreferences). Consulta los textos legales en la app (assets/legal/) para
+términos y política de privacidad en español e inglés.
+
+
+INFORMACIÓN TÉCNICA (desarrollo y tiendas)
+--------------------------------------------------------------------------------
+Nombre del proyecto (Flutter): balance_meals
+Versión actual (referencia): 1.0.0+1  (comprobar pubspec.yaml y pantalla Acerca de)
+
+Android
+  applicationId / namespace: com.easybalancedeating.app
+
+Stack principal
+  • Flutter SDK ^3.9.2
+  • shared_preferences — almacenamiento local
+  • fl_chart — gráficos
+  • google_mobile_ads — anuncios
+  • flutter_local_notifications + timezone — notificaciones locales
+
+Datos de categorías por defecto
+  • assets/data/food_categories.json
+  • assets/data/unhealthy_food_categories.json
+
+Marca visual (referencia)
+  • Color de splash / marca: #4CAF50
+  • Icono: assets/icon.png
+  • Logo splash: assets/logo.png
+
+Comandos útiles
+  flutter pub get
+  flutter run
+  dart run flutter_launcher_icons
+  dart run flutter_native_splash:create
+
+
+================================================================================
+  Fin del documento — actualizar la versión si cambia pubspec.yaml o la tienda.
+================================================================================
