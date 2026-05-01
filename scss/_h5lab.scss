@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+
 :root {
   --bg: #0a0e17;
   --bg-elevated: #111827;
@@ -41,7 +41,10 @@ body {
   color: var(--text);
   color-scheme: dark;
   background-color: var(--bg);
-  background-image: radial-gradient(ellipse 100% 70% at 50% -25%, rgba(99, 102, 241, 0.28), transparent 55%), radial-gradient(ellipse 60% 45% at 100% 20%, rgba(34, 211, 238, 0.06), transparent 50%), radial-gradient(ellipse 50% 40% at 0% 80%, rgba(99, 102, 241, 0.08), transparent 45%);
+  background-image:
+    radial-gradient(ellipse 100% 70% at 50% -25%, rgba(99, 102, 241, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 45% at 100% 20%, rgba(34, 211, 238, 0.06), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 80%, rgba(99, 102, 241, 0.08), transparent 45%);
   display: flex;
   flex-direction: column;
 }
@@ -163,7 +166,7 @@ header {
   transform: translateY(-1px);
 }
 
-.nav_header ul a[aria-current=page] {
+.nav_header ul a[aria-current="page"] {
   background: var(--accent-soft);
   border-color: rgba(99, 102, 241, 0.55);
   color: #fff;
@@ -173,10 +176,12 @@ header {
   header {
     position: sticky;
   }
+
   .nav_header ul {
     flex-direction: row;
   }
 }
+
 /* ——— Main layout ——— */
 main {
   flex: 1;
@@ -227,6 +232,7 @@ main {
     gap: 1.35rem;
   }
 }
+
 .game-card__icon {
   width: 88px;
   height: 88px;
@@ -443,6 +449,7 @@ footer a:hover .img_footer {
     background-image: url("../img/programacion.jpg");
   }
 }
+
 @keyframes cambio_imagen_2 {
   0% {
     background-image: url("../img/videojuego-movil.jpg");
@@ -460,6 +467,7 @@ footer a:hover .img_footer {
     background-image: url("../img/videojuego-movil.jpg");
   }
 }
+
 /* ——— Servicios ——— */
 #grid_1_servicios {
   display: grid;
@@ -475,19 +483,23 @@ footer a:hover .img_footer {
     grid-template-rows: auto 1fr;
     grid-template-areas: "title img" "text img";
   }
+
   #titulo_servicios {
     grid-area: title;
     text-align: left;
     margin: 0;
   }
+
   #parrafo_servicios_uno {
     grid-area: text;
     margin: 0;
   }
+
   #img_servicios {
     grid-area: img;
   }
 }
+
 #titulo_servicios {
   margin-bottom: 0;
 }
@@ -579,16 +591,20 @@ footer a:hover .img_footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a1 a2" "a3 a3";
   }
+
   #parrafo_index {
     grid-area: a1;
   }
+
   #video_index {
     grid-area: a2;
   }
+
   #carouselExampleFade {
     grid-area: a3;
   }
 }
+
 #parrafo_index {
   color: var(--text-muted);
 }
@@ -666,41 +682,49 @@ footer a:hover .img_footer {
     grid-template-rows: auto auto;
     grid-template-areas: "a1 a2" "a3 a4";
   }
+
   .grid_contacto > h2.titulo:first-of-type {
     grid-area: a1;
   }
+
   .grid_contacto > h2.titulo:nth-of-type(2) {
     grid-area: a2;
   }
+
   #fieldset_formulario {
     grid-area: a3;
   }
+
   #mapa {
     grid-area: a4;
   }
 }
+
 @media screen and (max-width: 800px) {
   .grid_contacto {
     grid-template-columns: 1fr;
     grid-template-areas: "a1" "a3" "a2" "a4";
   }
+
   .grid_contacto > h2.titulo:first-of-type {
     grid-area: a1;
   }
+
   #fieldset_formulario {
     grid-area: a3;
   }
+
   .grid_contacto > h2.titulo:nth-of-type(2) {
     grid-area: a2;
   }
+
   #mapa {
     grid-area: a4;
   }
 }
+
 @media screen and (max-width: 550px) {
   .grid_contacto {
     gap: 1.25rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
