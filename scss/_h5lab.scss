@@ -386,14 +386,14 @@ footer a:hover .img_footer {
   transform: scale(1.06);
 }
 
-/* ——— Nosotros ——— */
+/* ——— Nosotros / About ——— */
 #grid_nosotros {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 1.5rem;
   margin: 0;
-  max-width: 720px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -402,6 +402,7 @@ footer a:hover .img_footer {
   margin-bottom: 0;
 }
 
+.about-panel,
 #parrafo_nosotros_uno {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -410,6 +411,54 @@ footer a:hover .img_footer {
   font-size: 1.05rem;
   line-height: 1.7;
   box-shadow: var(--shadow);
+}
+
+.about-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.about-heading {
+  font-size: 1.2rem;
+  margin: 0 0 0.85rem;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.about-split {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .about-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about-split__item h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-split__item p {
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.about-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+.about-note {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
 }
 
 #nosotros_img1 {
