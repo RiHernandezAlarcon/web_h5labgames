@@ -67,8 +67,10 @@
       en: "Track what you eat across categories (vegetables, fruits, proteins, carbs, legumes, healthy fats and more). Set flexible goals, see the week at a glance, explore charts by category and variety, and read nutrition tips on the home screen. Customize categories, foods, colours and targets. Light and dark mode. Spanish and English. Not a substitute for professional medical or nutrition advice.",
       es: "Registra lo que comes por categorías (verduras, frutas, proteínas, carbohidratos, legumbres, grasas saludables y más). Metas flexibles, la semana de un vistazo, gráficos por categoría y variedad, y consejos en el inicio. Personaliza categorías, alimentos, colores y objetivos. Modo claro y oscuro. Español e inglés. No sustituye el consejo médico o nutricional profesional.",
     },
-    "apps.badge": { en: "Coming soon", es: "Próximamente" },
-    "apps.play_btn_title": { en: "Coming soon on Google Play", es: "Próximamente en Google Play" },
+    "apps.play_btn_title": {
+      en: "Open on Google Play (new tab)",
+      es: "Abrir en Google Play (nueva pestaña)",
+    },
     "apps.privacy": { en: "Privacy policy", es: "Política de privacidad" },
 
     "more.h1": { en: "More games", es: "Más juegos" },
@@ -95,8 +97,8 @@
 
   var HTML_STRINGS = {
     "about.apps_p": {
-      en: 'Tools beyond gaming: <strong>Easy Balanced Eating</strong> (coming soon on Google Play) for simple, visual meal logging and weekly habits.',
-      es: 'Herramientas más allá de los juegos: <strong>Easy Balanced Eating</strong> (próximamente en Google Play) para un registro de comidas visual y hábitos semanales sencillos.',
+      en: 'Tools beyond gaming: <strong>Easy Balanced Eating</strong> on <a href="https://play.google.com/store/apps/details?id=com.easybalancedeating.app" target="_blank" rel="noopener noreferrer">Google Play</a> — simple, visual meal logging and weekly habits.',
+      es: 'Herramientas más allá de los juegos: <strong>Easy Balanced Eating</strong> en <a href="https://play.google.com/store/apps/details?id=com.easybalancedeating.app" target="_blank" rel="noopener noreferrer">Google Play</a>: registro de comidas visual y hábitos semanales sencillos.',
     },
     "about.connect_p": {
       en: 'Open the developer page on Google Play for all listings. For general enquiries you can email <a href="mailto:h5labgames@gmail.com">h5labgames@gmail.com</a>. For app-specific issues, the contact options on each Play Store listing are often the fastest route.',
